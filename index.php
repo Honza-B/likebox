@@ -15,10 +15,13 @@
     .bonus-box {
         font-family: Tahoma;
         background: #FFDB4D;
+        width: 300px;
+        padding: 20px;
     }
     
     .bonus-box p {
-        font-weight: 400;
+        padding: 10px;
+        font-weight: 700;
     }
 </style>
 
