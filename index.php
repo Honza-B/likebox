@@ -37,7 +37,7 @@ $facebook = new Facebook(array(
 
 $signedRequest = $facebook->getSignedRequest();
 if($signedRequest['page']['liked'] == 1) { //pokud je like na stranku -> zobrazi se kod
-    echo '<div bonus-box>
+    echo '<div class="bonus-box">
         <h1>Váš bonusový kód</h1>
         <p>OB64GKS7K9</p>
     </div>';
