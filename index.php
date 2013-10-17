@@ -25,9 +25,12 @@ $facebook = new Facebook(array(
 ));
 
 $signedRequest = $facebook->getSignedRequest();
-if($signedRequest['page']['liked'] == 1) {
-    echo "Stránka se vám líbí";
-} else {
+if($signedRequest['page']['liked'] == 1) { //pokud je like na stranku -> zobrazi se kod
+    echo '<div bonus-box>
+        <h1>Váš bonusový kód</h1>
+        <p>OB64GKS7K9</p>
+    </div>';
+} else { //pokud neni like na stranku -> zobrazi se likebox
     echo '<div class="fb-like-box" data-href="https://www.facebook.com/pages/Med-nen%C3%AD-jed/649741231722878" data-width="The pixel width of the plugin" data-height="The pixel height of the plugin" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>';
 }
 ?>
