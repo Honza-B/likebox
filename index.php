@@ -11,7 +11,7 @@
     );
 </script>
 
-<style>
+<style type="text/css">
     .bonus-box {
         font-family: Tahoma;
         background: #FFDB4D;
