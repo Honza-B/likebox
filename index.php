@@ -11,6 +11,17 @@
     );
 </script>
 
+<style>
+    .bonus-box {
+        font-family: Tahoma;
+        background: #FFDB4D;
+    }
+    
+    .bonus-box p {
+        font-weight: 400;
+    }
+</style>
+
 <?php
 include('src/facebook.php');
 
